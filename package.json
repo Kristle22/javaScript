@@ -4,7 +4,7 @@
   "description": "JavScript",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./js/variables.js",
+    "dev": "nodemon ./js/01-functions.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

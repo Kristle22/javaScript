@@ -66,8 +66,3 @@ const icecreams = ['chocolate', 'vanilla', 'strawberry', 'banana', 'caramel'];
 list = icecream.reverse().join(", ");
 console.log(list);
 
-
-//  Kintamuju palyginimas
-
-1.
-
