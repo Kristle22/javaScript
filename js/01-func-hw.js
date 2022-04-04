@@ -32,3 +32,19 @@ console.log(skaitmenuKiekisSkaiciuje("asd"));
 console.log(skaitmenuKiekisSkaiciuje(NaN));
 
 // 4.
+function didziausiasSkaiciusSarase (sarasas) {
+    if (!Array.isArray(sarasas)) {
+        return 'Pateikta netinkamo tipo reiksme.';
+    } else if (sarasas.length === 0) {
+        return 'Pateiktas sarasas negali buti tuscias.';
+    } else {
+        let maxNumber;
+        let list = '';
+        for (i = 0; i < sarasas.length -1; i++) {
+            list += sarasas[i];
+            maxNumber = Math.max(sarasas);
+        }
+    }
+    console.log(maxNumber);
+}
+console.log(didziausiasSkaiciusSarase([1, 2, 3, 56, 12, 45]));
