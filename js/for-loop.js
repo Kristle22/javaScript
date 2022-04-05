@@ -40,7 +40,7 @@ function reverseString2(text) {
     }
     return reverse;
 }
-console.log(reverseString2('xyz'), '-->', 'zyx');
+console.log(reverseString2('zyle'), '-->', 'elyz');
 
 function reverseString3(text) {
     let reverse = '';
@@ -62,10 +62,10 @@ function liekana(nuo, iki, daliklis) {
 }
 console.log('----------------------------------------------');
 console.log(liekana(0, 11, 3));
-console.log(liekana(0, 11, 5));
-console.log(liekana(0, 11, 7));
+console.log(liekana(8, 31, 5));
+console.log(liekana(-18, 18, 7));
 
-console.log(liekana(0, 10e+5, 7));
+console.log(liekana(0, 1e6, 7));
 
 // const daugyba = (a, b) => a * b;
 function daugyba(a, b) {
@@ -78,15 +78,15 @@ function daugyba(a, b) {
     }
     // jei b nera skaicius -> ERROR
     if (typeof b !== 'number') {
-        return 'ERROR: pirmas parametras turi buti skaicius';
+        return 'ERROR: antras parametras turi buti skaicius';
     }
     if (isNaN(b)) {
         return 'ERROR: antras parametras turi buti tikras skaicius';
     }
     if ('' + b === 'NaN') {
-        return 'ERROR: antras parametras turi buti tikras skaicius'
+        return 'ERROR: pirmas parametras turi buti tikras skaicius'
     }
-    return a* b;
+    return a * b;
 };
 
 console.log(daugyba(7, 5));
@@ -94,12 +94,12 @@ console.log(daugyba(-7, 5));
 console.log(daugyba(-7, -5));
 console.log(daugyba(7, -5));
 console.log(daugyba(7.7, -5));
-console.log(daugyba([], 5));
 
-
+console.log('ERRORR -->', daugyba([], 5));
 console.log('ERRORR -->', daugyba(7.7, 'labas'));
-console.log('ERRORR -->',daugyba('labas', 5));
+console.log('ERRORR -->', daugyba('labas', 5));
 console.log('ERRORR -->', daugyba(7.7, ''));
 console.log('ERRORR -->', daugyba('', 5));
 console.log('ERRORR -->', daugyba(7, NaN));
-console.log('ERRORR -->', daugyba(Infinity, 5));
+console.log('ERRORR -->', daugyba(true , 5.5));
+console.log('ERRORR -->', daugyba(Infinity, 7));
