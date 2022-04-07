@@ -39,6 +39,35 @@ const pirmaRaide = s => s[0];
 console.log(pirmaRaide(tekstas));
 
 
+// CODEWARS
+
+// function rowSumOddNumbers(n) {
+//     let triangleLeft = '';
+//     let triangleRight = '';
+//     for (i = 1; i <= n; i++) {
+//            triangleLeft += '*'.repeat(i).padStart(n) + '\n';
+//            for (j = 1; j <= i; j++) {
+//                triangleRight += '1'.repeat(1).padEnd(n) + '\n';
+//            };       
+//     }
+//     return triangleLeft;
+//   }
+//   console.log(rowSumOddNumbers(20));
+
+function rowSumOddNumbers(n) {
+    let triangle = '';
+    sum = 0;
+    for (i = 1; i <= n; i+=2) {
+           for (j = 1; j <= i; j+=2) {
+               triangle +=' ' + j;
+           };  
+        triangle += '\n';    
+    }
+    return triangle;
+  }
+  console.log(rowSumOddNumbers(10));
+
+
 
 
 
